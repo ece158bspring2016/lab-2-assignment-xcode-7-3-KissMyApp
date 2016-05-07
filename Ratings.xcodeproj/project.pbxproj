@@ -11,12 +11,12 @@
 		824404911BA2816A005DDDD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8244048F1BA2816A005DDDD7 /* Main.storyboard */; };
 		824404931BA2816A005DDDD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824404921BA2816A005DDDD7 /* Assets.xcassets */; };
 		824404961BA2816A005DDDD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824404941BA2816A005DDDD7 /* LaunchScreen.storyboard */; };
-		8244049E1BA3BB4A005DDDD7 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244049D1BA3BB4A005DDDD7 /* PlayersViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		824404A01BA3BB79005DDDD7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244049F1BA3BB79005DDDD7 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
-		824404A21BA3BBC9005DDDD7 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824404A11BA3BBC9005DDDD7 /* SampleData.swift */; settings = {ASSET_TAGS = (); }; };
-		824404A41BA3BE88005DDDD7 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824404A31BA3BE88005DDDD7 /* PlayerCell.swift */; settings = {ASSET_TAGS = (); }; };
-		826274A21BA3F98000E5E8BE /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826274A11BA3F98000E5E8BE /* PlayerDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		826274A41BA4321A00E5E8BE /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826274A31BA4321A00E5E8BE /* GamePickerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		8244049E1BA3BB4A005DDDD7 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244049D1BA3BB4A005DDDD7 /* PlayersViewController.swift */; };
+		824404A01BA3BB79005DDDD7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8244049F1BA3BB79005DDDD7 /* Player.swift */; };
+		824404A21BA3BBC9005DDDD7 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824404A11BA3BBC9005DDDD7 /* SampleData.swift */; };
+		824404A41BA3BE88005DDDD7 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824404A31BA3BE88005DDDD7 /* PlayerCell.swift */; };
+		826274A21BA3F98000E5E8BE /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826274A11BA3F98000E5E8BE /* PlayerDetailsViewController.swift */; };
+		826274A41BA4321A00E5E8BE /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826274A31BA4321A00E5E8BE /* GamePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +118,7 @@
 				TargetAttributes = {
 					824404871BA2816A005DDDD7 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 94MY6V4MNR;
 					};
 				};
 			};
@@ -274,10 +275,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Ratings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = razeware.Ratings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanwilliam.Ratings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -285,10 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Ratings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = razeware.Ratings;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanwilliam.Ratings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
